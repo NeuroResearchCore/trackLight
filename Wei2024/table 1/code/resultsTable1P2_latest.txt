@@ -1,0 +1,14 @@
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ l P{2.5cm} P{2.5cm} P{2.5cm} P{2.5cm} } 
+\toprule 
+ Peak 2 & \textbf{Noise 0$ \% $} & \textbf{Noise 5$ \% $} & \textbf{Noise 10$ \% $} & \textbf{Noise 15$ \% $} \\ 
+\midrule 
+\textbf{Ridge Regression} & \gradient{0.12} & \gradient{0.23} & \gradient{0.43} & \gradient{0.63}\\ 
+\textbf{Kernel Ridge Regression} & \gradient{0.07} & \gradient{0.07} & \gradient{0.08} & \gradient{0.11}\\ 
+\textbf{SVM} & \gradient{0.07} & \gradient{0.09} & \gradient{0.14} & \gradient{0.17}\\ 
+\textbf{LSTM} & \gradient{0.12} & \gradient{0.13} & \gradient{0.15} & \gradient{0.17}\\ 
+\textbf{Neural Network} & \gradient{0.09} & \gradient{0.16} & \gradient{0.19} & \gradient{0.22}\\ 
+\textbf{Random Forests} & \gradient{0.09} & \gradient{0.10} & \gradient{0.12} & \gradient{0.13}\\ 
+\bottomrule 
+\end{tabular} 
+}

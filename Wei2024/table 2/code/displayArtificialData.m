@@ -1,0 +1,79 @@
+function displayArtificialData()
+
+% 
+% h = gcf;
+% set(h,'Units','Inches');
+% pos = get(h,'Position');
+% set(h,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)])
+% print(h,'./fig3b.eps','-deps2c','-r300')
+
+
+load('D:\Fabien\paperMiaomiaoLatest\table 2\simulatedData.mat');
+
+x = 1:1:numel(l1);
+y = l1;
+z = zeros(size(x));
+col = x;  % This is the color, vary with x in this case.
+surface([x;x],[y;y],[z;z],[col;col],...
+        'facecol','no',...
+        'edgecol','interp',...
+        'linew',1.5);
+
+hold on;
+
+x = 1:1:numel(l2);
+y = l2;
+z = zeros(size(x));
+col = x;  % This is the color, vary with x in this case.
+surface([x;x],[y;y],[z;z],[col;col],...
+        'facecol','no',...
+        'edgecol','interp',...
+        'linew',1.5);
+
+hold on;
+
+x = 1:1:numel(l3);
+y = l3;
+z = zeros(size(x));
+col = x;  % This is the color, vary with x in this case.
+surface([x;x],[y;y],[z;z],[col;col],...
+        'facecol','no',...
+        'edgecol','interp',...
+        'linew',1.5);
+
+ylabel('Time (ms)', 'FontSize', 14);
+xlabel('Index of Artificial Pulse', 'FontSize', 14);
+set(gcf,'color','w');
+
+annotation(gcf,'textbox',... 
+    [0.13 0.75 0.0588214285714286 0.0595238095238102],...
+    'String',{'P_1'},...
+    'FitBoxToText','on', ...
+    'EdgeColor','none',...
+    'FontSize',14);
+
+annotation(gcf,'textbox',...
+    [0.13 0.55 0.0588214285714285 0.0595238095238103],...
+    'String','P_2',...
+    'FitBoxToText','on',...
+    'EdgeColor','none',...
+    'FontSize',14);
+
+annotation(gcf,'textbox',...
+    [0.13 0.28 0.0588214285714285 0.0595238095238104],...
+    'String','P_3',...
+    'FitBoxToText','on',...
+    'EdgeColor','none',...
+    'FontSize',14);
+
+
+ h = gcf;
+ set(h,'Units','Inches');
+ pos = get(h,'Position');
+ set(h,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)])
+  print(h,'./fig3c.png','-dpng','-r300')
+
+ print(h,'./fig3c.eps','-deps2c','-r300')
+ close;
+
+

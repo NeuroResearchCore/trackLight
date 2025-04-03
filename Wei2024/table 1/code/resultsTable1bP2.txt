@@ -1,0 +1,14 @@
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ l p{2.5cm} p{2.5cm} p{2.5cm} p{2.5cm} } 
+\toprule 
+ Peak 2 & \textbf{Noise 0$ \% $} & \textbf{Noise 5$ \% $} & \textbf{Noise 10$ \% $} & \textbf{Noise 15$ \% $} \\ 
+\midrule 
+\textbf{Ridge Regression} & \gradient{6.5} $ \pm 11.4$  & \gradient{65.7} $ \pm 45.9$  & \gradient{128.7} $ \pm 87.3$  & \gradient{194.2} $ \pm 131.0$ \\ 
+\textbf{Kernel Ridge Regression} & \gradient{3.4} $ \pm 7.4$  & \gradient{8.6} $ \pm 7.7$  & \gradient{22.9} $ \pm 9.8$  & \gradient{35.8} $ \pm 12.4$ \\ 
+\textbf{SVM} & \gradient{3.3} $ \pm 6.6$  & \gradient{5.4} $ \pm 8.1$  & \gradient{10.5} $ \pm 12.3$  & \gradient{13.0} $ \pm 14.7$ \\ 
+\textbf{LSTM} & \gradient{7.7} $ \pm 11.8$  & \gradient{8.0} $ \pm 11.7$  & \gradient{8.9} $ \pm 11.7$  & \gradient{9.9} $ \pm 11.8$ \\ 
+\textbf{Neural Network} & \gradient{3.6} $ \pm 5.9$  & \gradient{14.8} $ \pm 19.0$  & \gradient{31.8} $ \pm 38.8$  & \gradient{47.1} $ \pm 54.4$ \\ 
+\textbf{Random Forests} & \gradient{3.5} $ \pm 6.9$  & \gradient{5.7} $ \pm 8.5$  & \gradient{7.4} $ \pm 10.1$  & \gradient{8.8} $ \pm 11.2$ \\ 
+\bottomrule 
+\end{tabular} 
+}

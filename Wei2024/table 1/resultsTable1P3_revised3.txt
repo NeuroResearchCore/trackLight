@@ -1,0 +1,15 @@
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ l P{2.5cm} P{2.5cm} P{2.5cm} P{2.5cm} } 
+\toprule 
+ Peak 3 & \textbf{Noise 0$ \% $} & \textbf{Noise 5$ \% $} & \textbf{Noise 10$ \% $} & \textbf{Noise 15$ \% $} \\ 
+\midrule 
+\textbf{Spectral Regression} & \gradient{10.4} & \gradient{17.2} & \gradient{28.7} & \gradient{41.1}\\ 
+\textbf{Kernel Spectral Regression} & \gradient{7.0} & \gradient{8.1} & \gradient{10.3} & \gradient{13.2}\\ 
+\textbf{SVM} & \gradient{6.3} & \gradient{10.1} & \gradient{20.4} & \gradient{25.5}\\ 
+\textbf{LSTM} & \gradient{12.8} & \gradient{14.9} & \gradient{18.1} & \gradient{21.7}\\ 
+\textbf{Neural Network} & \gradient{8.6} & \gradient{41.7} & \gradient{62.9} & \gradient{73.6}\\ 
+\textbf{Random Forests} & \gradient{6.6} & \gradient{11.9} & \gradient{17.7} & \gradient{22.9}\\ 
+\textbf{MOCAIP} & \gradient{31.2} & \gradient{54.4} & \gradient{64.9} & \gradient{62.4}\\ 
+\bottomrule 
+\end{tabular} 
+}

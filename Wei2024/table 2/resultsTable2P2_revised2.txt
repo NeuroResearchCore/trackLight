@@ -1,0 +1,20 @@
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ l P{2.5cm} P{2.5cm} P{2.5cm} P{2.5cm} } 
+\toprule 
+ Peak 2 & \textbf{Noise 0$ \% $} & \textbf{Noise 5$ \% $} & \textbf{Noise 10$ \% $} & \textbf{Noise 15$ \% $} \\ 
+\midrule 
+\textbf{Ridge Regression} & \gradient{0.10} & \gradient{0.11} & \gradient{0.12} & \gradient{0.13}\\ 
+\textbf{Kernel Ridge Regression} & \gradient{0.07} & \gradient{0.07} & \gradient{0.07} & \gradient{0.08}\\ 
+\textbf{SVM} & \gradient{0.10} & \gradient{0.11} & \gradient{0.11} & \gradient{0.13}\\ 
+\textbf{LSTM (single waveform)} & \gradient{0.24} & \gradient{0.29} & \gradient{0.36} & \gradient{0.45}\\ 
+\textbf{Neural Network} & \gradient{0.27} & \gradient{0.33} & \gradient{0.33} & \gradient{0.33}\\ 
+\textbf{Random Forests} & \gradient{0.30} & \gradient{0.30} & \gradient{0.29} & \gradient{0.30}\\ 
+\textbf{MOCAIP (single waveform)} & \gradient{0.47} & \gradient{0.71} & \gradient{0.67} & \gradient{0.67}\\ 
+\hline 
+\textbf{LSTM (Tracking)} & \gradient{0.03} & \gradient{0.03} & \gradient{0.03} & \gradient{0.05}\\ 
+\textbf{Bayesian Tracking} & \gradient{0.04} & \gradient{0.04} & \gradient{0.04} & \gradient{0.04}\\ 
+\textbf{Kalman Filter} & \gradient{0.00} & \gradient{0.02} & \gradient{0.03} & \gradient{0.05}\\ 
+\textbf{MOCAIP (Tracking)} & \gradient{0.04} & \gradient{0.04} & \gradient{0.04} & \gradient{0.05}\\ 
+\bottomrule 
+\end{tabular} 
+}
